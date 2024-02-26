@@ -1,0 +1,10 @@
+x = linspace(-2*pi,2*pi,100);
+y = linspace(-2*pi,2*pi,100);
+[x,y]= meshgrid(x,y);
+z = sin(x).*cos(y);
+figure;
+surf(x,y,z);
+title('plot of f(x,y)= sin(x)*cos(y)');
+xlabel('x');
+ylabel('y');
+zlabel('f(x,y)');
